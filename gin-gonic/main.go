@@ -1,0 +1,5 @@
+package gingonic
+
+func MainFunction() {
+	
+}
