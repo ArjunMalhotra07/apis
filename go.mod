@@ -2,7 +2,11 @@ module github.com/ArjunMalhotra07/apis.git
 
 go 1.20
 
-require github.com/gin-gonic/gin v1.10.0
+require (
+	github.com/gin-gonic/gin v1.10.0
+	github.com/go-chi/chi v1.5.5
+	github.com/go-chi/chi/v5 v5.0.12
+)
 
 require (
 	github.com/bytedance/sonic v1.11.6 // indirect

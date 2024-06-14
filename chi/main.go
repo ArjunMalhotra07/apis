@@ -1,3 +1,5 @@
 package chi
 
-func MainFunction()
+func MainFunction() {
+	ChiApiRoutes()
+}

@@ -1,10 +1,8 @@
 package main
 
-import (
-	gingonic "github.com/ArjunMalhotra07/apis.git/gin-gonic"
-)
+import "github.com/ArjunMalhotra07/apis.git/chi"
 
 func main() {
-	// chi.MainFunction()
-	gingonic.MainFunction()
+	chi.MainFunction()
+	// gingonic.MainFunction()
 }
