@@ -9,9 +9,14 @@ import (
 
 func MainFunction() {
 	app := application.New()
+	// //! Method 1
 	err := app.StartServer(context.TODO())
 	if err != nil {
 		fmt.Println("failed to start app:", err)
 	}
-	
+	//! Method 2
+	/*
+		err := http.ListenAndServe(":8080", router)
+	*/
+
 }

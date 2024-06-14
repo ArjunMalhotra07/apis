@@ -22,9 +22,17 @@ func (a *App) StartServer(c context.Context) error {
 		Addr:    ":8080",
 		Handler: a.router,
 	}
+	//! Method 1 to Start Server
 	err := server.ListenAndServe()
 	if err != nil {
 		return fmt.Errorf("error %s", err)
 	}
+	//! Method 2 to Start Server
+	/*
+		err := http.ListenAndServe(":8080", server.Handler)
+		if err != nil {
+			return fmt.Errorf("error %s", err)
+		}
+	*/
 	return nil
 }

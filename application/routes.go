@@ -12,10 +12,5 @@ func ChiApiRoutes() *chi.Mux {
 	router.Use(middleware.Logger)
 	router.Get("/", BaseRoute)
 	fmt.Println("Running on Port 8080!")
-	//! Open server Method 1
-
-	//! Open server Method 2
-	// err := http.ListenAndServe(":8080", router)
-
 	return router
 }
