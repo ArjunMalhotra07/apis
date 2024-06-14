@@ -1,4 +1,4 @@
-package chi
+package application
 
 import (
 	"encoding/json"
