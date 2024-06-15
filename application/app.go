@@ -56,8 +56,6 @@ func (a *App) StartServer(c context.Context) error {
 		return server.Shutdown(timeout)
 
 	}
-	err = <-ch
-
 	//! Method 2 to Start Server
 	/*
 		err := http.ListenAndServe(":8080", server.Handler)
