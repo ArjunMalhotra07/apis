@@ -1,8 +1,11 @@
 package handler
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
+
+	"github.com/ArjunMalhotra07/apis.git/structs"
 )
 
 type Order struct {
@@ -10,6 +13,9 @@ type Order struct {
 
 func (o *Order) Create(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Create an order")
+	response := structs.Response{Message: "Created an order"}
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(response)
 }
 
 func (o *Order) List(w http.ResponseWriter, r *http.Request) {
